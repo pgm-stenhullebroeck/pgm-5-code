@@ -575,13 +575,15 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"h7u1C":[function(require,module,exports) {
 var _classes = require("./classes");
+var _utility = require("./utility");
 // datatypes.runDemos();
 // functions.runDemos();
 const myLittleAirplane = new (0, _classes.Airplane)("Jannes");
+(0, _utility.utility).runDemos();
 console.log(myLittleAirplane.pilot);
 console.log("Hello Carbonara!");
 
-},{"./classes":"fIM8W"}],"fIM8W":[function(require,module,exports) {
+},{"./classes":"fIM8W","./utility":"eMjnK"}],"fIM8W":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Airplane", ()=>Airplane);
@@ -625,6 +627,37 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["2oZg2","h7u1C"], "h7u1C", "parcelRequire94c2")
+},{}],"eMjnK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "utility", ()=>utility);
+const utility = {
+    runDemos: ()=>{
+        const myTodo = {
+            name: "Mine",
+            time: "test"
+        };
+        // myTodo = {
+        //   name: 'Mine',
+        //   time: 'test',
+        // };
+        console.log(myTodo.name);
+        // dankzij utility
+        // myTodo.name = "koken"
+        function DoTodo(string) {}
+        const incompleteTodo = {
+            name: "test"
+        };
+        DoTodo(incompleteTodo);
+        const todoName = {
+            name: ""
+        };
+        const todoName2 = {
+            time: ""
+        };
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2oZg2","h7u1C"], "h7u1C", "parcelRequire94c2")
 
 //# sourceMappingURL=index.b71e74eb.js.map

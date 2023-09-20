@@ -6,5 +6,6 @@ import { utility } from './utility';
 // datatypes.runDemos();
 // functions.runDemos();
 const myLittleAirplane = new Airplane('Jannes');
+utility.runDemos();
 console.log(myLittleAirplane.pilot);
 console.log('Hello Carbonara!');
