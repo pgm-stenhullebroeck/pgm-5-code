@@ -29,5 +29,14 @@ export const functions = {
 
     console.log(returnValue(2));
     console.log(returnValue('2'));
+
+    // type guard
+    function writeToConsole(value: string | number) {
+      if (typeof value == 'string') {
+        console.log(value.toUpperCase());
+        return;
+      }
+      console.log(value);
+    }
   },
 };
