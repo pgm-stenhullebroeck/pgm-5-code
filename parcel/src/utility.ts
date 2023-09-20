@@ -5,6 +5,13 @@ export const utility = {
       time: string;
     };
 
+    type todoPreview = {
+      name: string;
+      time: string;
+    };
+
+    type todoPreview2 = Omit<todo, 'description'>;
+
     const myTodo: Readonly<todo> = {
       name: 'Mine',
       time: 'test',
